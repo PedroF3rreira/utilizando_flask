@@ -8,6 +8,7 @@ app = Flask(__name__)
 def sucess(user_name):
     return render_template('index.html', user_name=user_name, title="Pagina boas vindas")
 
+
 # função que faz login no sistema
 @app.route('/login', methods=['GET', 'POST'])
 def login():
